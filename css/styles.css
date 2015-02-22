@@ -1,0 +1,65 @@
+html{
+	background: gray;
+}
+.wrapper{
+	width: 95%;
+	background: white;
+	margin: auto 2.5%
+}
+a{
+	color : orange;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*Estilos Cabecera*/
+
+.header{
+
+}
+.header-container-logo{
+	display: none
+}
+/* Estilos Menu Principal*/
+.main-menu{
+   float: right;
+   margin:5px;
+   list-style: none;
+   color: orange;
+}
+.main-menu ul{
+	list-style: none;	
+}
+
+/*Estilos Botones de Opciones*/
+/*Estilos Generales Galeria*/
+
+.slider-element{
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-radius: 9px;
+  float: left;
+  position: absolute;
+  /*opacity: 0;*/
+  transition:all 0.5s ease;
+  border: 10px solid white;
+}
+/*Estilos Galeria Ilustraciones*/
+.box-container1{
+   width: 100%;
+   transition:0.5s;
+   position: relative;
+
+}
+
+/*Estilos Galeria Fotos*/
+.box-container2{
+   width: 100%;
+   transition:0.5s;
+   position: relative;
+
+}
