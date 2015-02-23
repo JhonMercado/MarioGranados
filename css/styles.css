@@ -1,10 +1,13 @@
 html{
-	background: gray;
+	
+}
+body{
+  background: url("../images/Fondo.jpg");
+  margin: 0;
 }
 .wrapper{
-	width: 95%;
-	background: white;
-	margin: auto 2.5%
+	width: 100%;
+	margin: auto;
 }
 a{
 	color : orange;
@@ -17,25 +20,82 @@ a:hover{
 /*Estilos Cabecera*/
 
 .header{
-
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+.header-title{
+  display: none;
+  margin: 0;
+  padding: 0;
 }
 .header-container-logo{
-	display: none
+  background: url("../images/barra.png");
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 50px 0;
+  height: 70px;
+}
+.header-container-logo img{
+  margin: -23px;
+  height: 175%
 }
 /* Estilos Menu Principal*/
 .main-menu{
-   float: right;
    margin:5px;
    list-style: none;
    color: orange;
+   margin: 0;
+   text-align: center;
 }
 .main-menu ul{
-	list-style: none;	
+  display: inline-block;
+	list-style: none;
+  position: relative;
+  padding: 0;
+  width: 35%;
+
+}
+.main-menu ul li{
+    display: inline-block;
+
+}
+.arrow-illustration{
+  position: absolute;
+  top:60px;
+  left: -120px;
+}
+.arrow-photography{
+  position: absolute;
+  top:60px;
+  right: -140px;
+}
+.link-contactme{
+  position: absolute;
+  bottom:-110px;
+  left: 160px;
+}
+.link-illustration{
+  margin: 50px 10px;
 }
 
 /*Estilos Botones de Opciones*/
-/*Estilos Generales Galeria*/
 
+/*Estilos Galeria Ilustraciones*/
+.ilustraciones{
+  display: none;
+}
+.box-container1{
+   width: 100%;
+   transition:0.5s;
+   position: relative;
+
+}
+/*Estilos Generales fotos*/
+.fotos{
+  display: none;
+}
 .slider-element{
   width: 90%;
   margin: 0;
@@ -47,13 +107,6 @@ a:hover{
   /*opacity: 0;*/
   transition:all 0.5s ease;
   border: 10px solid white;
-}
-/*Estilos Galeria Ilustraciones*/
-.box-container1{
-   width: 100%;
-   transition:0.5s;
-   position: relative;
-
 }
 
 /*Estilos Galeria Fotos*/
