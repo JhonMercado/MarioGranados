@@ -5,6 +5,10 @@
 	<title>MarioGranados.Net</title>
 	<meta name="description" content="Mario Granados Diseñador Grafico">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<!-- Link a archivo para galeria Efecto LightBox-->
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="html5lightbox/jquery.js"></script>
+	<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -20,8 +24,16 @@
 		<nav class="main-menu">
 			<ul>
 				<li class="arrow-illustration"> <img src="images/illustration.png" alt="illustration"></li>
-				<li class="link-illustration"> <a href=""><img src="images/Illu.png" alt=""></a></li>
-				<li class="link-photography"> <a href=""><img src="images/Photo.png" alt=""></a></li>
+				<li class="link-illustration"> 
+					<a href="gallery/1.jpg" class="html5lightbox" data-group="mygroup"  title="Título de la imagen 1"><img src="images/Illu.png" alt=""></a>
+					<a href="gallery/2.jpg" class="html5lightbox" data-group="mygroup"  title="Título de la imagen 1"></a>
+					<a href="gallery/3.jpg" class="html5lightbox" data-group="mygroup"  title="Título de la imagen 1"></a>
+					<a href="gallery/4.jpg" class="html5lightbox" data-group="mygroup"  title="Título de la imagen 1"></a>
+					<a href="gallery/5.jpg" class="html5lightbox" data-group="mygroup"  title="Título de la imagen 1"></a>
+				</li>
+				<li class="link-photography">
+					<a href="" class="html5lightbox" title="Título de la imagen 1"><img src="images/Photo.png" alt=""></a>
+				</li>
 				<li class="arrow-photography"> <img src="images/Photography.png" alt=""></li>
 				<li class="link-contactme"> <a href=""><img src="images/contact.png" alt=""></a></li>
 			</ul>
@@ -59,5 +71,9 @@
 		</section>
 	</main>
 	
+	<!-- Inicio archivos para galeria Efecto LightBox-->
+	
+    <!-- Fin archivos para galeria Efecto LightBox-->
+
 </body>
 </html>
