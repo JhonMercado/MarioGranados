@@ -2,7 +2,7 @@ html{
 	
 }
 body{
-  background: url("../images/Fondo.jpg") no-repeat;
+  background: url("../img/Fondo.jpg") no-repeat;
   margin: 0;
 }
 .wrapper{
@@ -32,7 +32,7 @@ a:hover{
   padding: 0;
 }
 .header-container-logo{
-  background: url("../images/barra.png");
+  background: url("../img/barra.png");
   text-align: center;
   width: 100%;
   padding: 0;
@@ -140,4 +140,63 @@ a:hover{
    transition:0.5s;
    position: relative;
 
+}
+.contact{
+ 
+  display: inline-block;
+  margin: 0 27%;
+  padding: 0 2%;
+  width: 40%;
+}
+.contact div{
+  display: block;
+  color:black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+.contact input{
+  display: block;
+  margin: 10px 2%;
+  padding: 15px;
+  width: 90%%;
+  border-radius: 5px;
+  background: url(../img/imagen.contacto.jpg) no-repeat; 
+  border: 1.5px inset #D8D8D8;
+}
+input.button{
+  background: url(../img/barra.png) no-repeat;
+  text-align: center;
+  margin: auto; 
+} 
+.contact textarea{
+  display: block;
+  margin: 10px 2%;
+  padding: 10px 15px 50px 10px;
+  width: 90%;
+  border-radius: 5px;
+  border:  1.5px inset #D8D8D8;
+  background: url(../img/imagen.contacto.jpg) no-repeat; 
+
+}
+div.datos-contacto p{
+  display: block;
+  margin: 0;
+}
+.image-contact{
+display: inline-block;
+width: 40%; 
+
+}
+.image-contact img{
+  display: block;
+  margin: 20px 20px;
+}
+.image-contact p{
+ margin: 0 20px 40px 10px; 
+}
+.image-contact img{
+  width: 200px;
+ 
 }
