@@ -1,7 +1,7 @@
 (function($){
 	$(document).ready(function() {
 		$('#submit-form').click(function(e){
-		
+		 
 			e.preventDefault();
             var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
             var name  = $('#rp_name').val(),
@@ -28,9 +28,10 @@
 
             if(message != "" && name != "" && reg.test(email) != false) {
             	data_html = "name=" + name + "&email="+ email + "&message=" + message + "&subject="+ subject;
-
+                      
                 //alert(data_html);
                 $.ajax({
+                    
                     type: 'POST',
                     url: 'php/contact_form.php',
                     data: data_html,
@@ -41,13 +42,17 @@
                             $('#rp_name').val('');
 							$('#rp_email').val('');
 							$('#rp_message').val('');
+                            $('#rp_subject').val('');
                         }else{
                             success.html('<div class="alert alert-error">Message <strong>not</strong> sent! Please Try Again!</div>')  ; 
                         }
                     }
-                });
+                     
     
+                });
+
             }
+
             return false;
         });
 	});
