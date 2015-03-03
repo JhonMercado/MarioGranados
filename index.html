@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,9 +6,8 @@
 	<meta name="description" content="Mario Granados Diseñador Grafico">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
-	<!-- Link a archivo para galeria Efecto LightBox-->
-	<link href="css/bootstrap.css" rel="stylesheet" />
-    <!--<link href="css/lightbox.css" rel="stylesheet" />-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/lightbox.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -72,27 +71,76 @@
 					</a>
 				</li>
 				<li class="arrow-photography"> <img src="img/Photography.png" alt=""></li>
-				<li class="link-contactme"> <a href="#modalform" data-toggle="modal"><img src="img/Contact.png" alt=""></a></li>
+				<li class="link-contactme"> <a href="#myModal" data-toggle="modal"><img src="img/Contact.png" alt=""></a></li>
 			</ul>
 		</nav>
 		<section class="contacto">
 			<div class="container">
-					<a class="btn" data-toggle="modal" href="#myModal">Launch Modal</a>
-					<div class="modal" id="myModal">
-						<div class="modal-header">
-							<a class="close" data-dismiss="modal">&times;</a>
-							<h3>Modal header</h3>
-						</div>
-						<div class="modal-body">
-							<p>One fine body…</p>
-						</div>
-						<div class="modal-footer">
-							<a href="#" class="btn btn-primary">Save changes</a>
-							<a href="#" class="btn">Close</a>
-						</div>
-					</div>
-		
-			</div>
+				<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+								<figure class="header-modal-logo">
+									<img src="img/contactme.png">
+								</figure>
+							</div><!-- Fin Modal-header-->
+							<div class="modal-body">
+										<form class="contact" method="POST">
+											
+											<div class="row">
+												<div class="form-group col-md-6 col-sm-6">
+													<label for="">Name</label>
+													<br>
+													<input type="text" placeholder="Name" name="rp_name"     id="rp_name"  required>
+												</div>
+											
+												<div class="form-group col-md-6 col-sm-6">
+													<label for="">Email</label>
+													<br>
+													<input type="text" placeholder="Email"  name="rp_email"    id="rp_email" required>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="form-group col-md-6 col-sm-6">
+													<label for="">Subject</label>
+													<br>
+													<input type="text" placeholder="Subject" name="rp_subject"  id="rp_subject" required>
+												</div>
+											</div>
+												
+											<div class="row">
+												<div class="form-group col-md-12 col-sm-12">
+													<label for="">Message</label>
+													<br>
+													<textarea type="text-area" placeholder="Message" name="rp_message" id="rp_message" required></textarea>
+											    </div>
+											</div>	
+											<div class="row">
+												<div class="col-md-12 col-sd-12">
+													<input class="btn btn-primary" type="submit" id="submit-form" name="submit" value="Send message">
+												</div>
+												 
+											</div>									
+											
+										</form>
+							</div><!-- Fin Modal-body-->
+							<div class="modal-footer">
+									
+									<a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+									<div class="text_align_center">
+										<strong>Email:</strong> <a href="mailto:mariogranados@yahoo.com">mariogranados@yahoo.com</a>
+									</div>
+									<div>
+										<strong>Web:</strong> <a href="http://www.mariogranados.net" target="_blank">www.mariogranados.net</a><br>
+									</div>
+							</div><!-- Fin Modal-footer-->  
+							
+						</div>	<!-- Fin Modal-content-->
+					</div><!-- Fin Modal-dialog-->
+				</div><!-- Fin Modal-->
+			</div><!-- Fin Div container-->
 		</section>
 	
 		<section class="ilustraciones">
@@ -127,10 +175,10 @@
 		</section>
 	</main>
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<!--<script src="js/lightbox.min.js"></script>-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/contact_form.js" type="text/javascript"></script>
+	<script src="js/lightbox.min.js"></script>
 	<!-- Inicio archivos para galeria Efecto LightBox-->
-	
     <!-- Fin archivos para galeria Efecto LightBox-->
 
 </body>

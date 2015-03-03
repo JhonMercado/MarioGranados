@@ -141,62 +141,59 @@ a:hover{
    position: relative;
 
 }
-.contact{
+
+/*Estilos Formulario Modal*/
+.modal-dialog{
+   border-radius: 5px;
+
+}
+.modal-content h4{
+  font-weight: bold;
+  font-family: cursive;
+}
+.modal-header{
+ margin: 0;
+ padding: 0;
+ /*background: url("../img/Fondo.jpg") no-repeat;*/
  
-  display: inline-block;
-  margin: 0 27%;
-  padding: 0 2%;
-  width: 40%;
 }
-.contact div{
-  display: block;
-  color:black;
-  text-align: center;
-  margin: 0;
+.modal-header .header-modal-logo{
+  width: 100%;
+  margin: 20px 0;
   padding: 0;
-  
-}
-.contact input{
-  display: block;
-  margin: 10px 2%;
-  padding: 15px;
-  width: 90%%;
-  border-radius: 5px;
-  background: url(../img/imagen.contacto.jpg) no-repeat; 
-  border: 1.5px inset #D8D8D8;
-}
-input.button{
-  background: url(../img/barra.png) no-repeat;
+  /*background: url("../img/barra.png");*/
+  height: 40px;
   text-align: center;
-  margin: auto; 
+}
+.modal-header .header-modal-logo img{
+ margin: -15px;
+}
+
+.contact input{
+  width: 100%;
+  margin: 1% 0%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1.5px inset #D8D8D8;
+  display: inline-block;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
+}
+.contact input.btn{
+  width: 90%
+  margin: 10% 5%; 
 } 
 .contact textarea{
   display: block;
-  margin: 10px 2%;
+  width: 100%;
+  margin: 1% 0%;
   padding: 10px 15px 50px 10px;
-  width: 90%;
   border-radius: 5px;
   border:  1.5px inset #D8D8D8;
-  background: url(../img/imagen.contacto.jpg) no-repeat; 
+  
 
 }
 div.datos-contacto p{
   display: block;
   margin: 0;
-}
-.image-contact{
-display: inline-block;
-width: 40%; 
-
-}
-.image-contact img{
-  display: block;
-  margin: 20px 20px;
-}
-.image-contact p{
- margin: 0 20px 40px 10px; 
-}
-.image-contact img{
-  width: 200px;
- 
 }
